@@ -74,7 +74,8 @@ Sortable.create(lista, {
              && orden[8] === 'item-9'
              && orden[9] === 'item-10'
              ) {
-             	root. innerHTML = navbar + `<h2 style="text-align: center;"> Recarga la web para volver a jugar <a href="/" style="color: blue;"> Recargar </a> </h2>`;
+             	// root. innerHTML = navbar + `<h2 style="text-align: center;"> Recarga la web para volver a jugar <a href="/" style="color: blue;"> Recargar </a> </h2>`;
+		location.reload();
                 alert('¡Ordenado Correctamente!');
             }
         },
