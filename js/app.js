@@ -44,7 +44,7 @@ const game = `
  root.innerHTML += navbar + game;
 
 document.querySelector('#what').addEventListener('click', function() {
-	alert('Conchale maNoO ordena EsaVAina')
+	alert('Ordena los items según su número, de menor a mayor.')
 })
 
 
@@ -74,7 +74,7 @@ Sortable.create(lista, {
              && orden[8] === 'item-9'
              && orden[9] === 'item-10'
              ) {
-             	root. innerHTML = navbar;
+             	root. innerHTML = navbar + `<h2 style="text-align: center;"> Recarga la web para volver a jugar <a href="/" style="color: blue;"> Recargar </a> </h2>`;
                 alert('¡Ordenado Correctamente!');
             }
         },
