@@ -1,6 +1,5 @@
 const root = document.getElementById('root');
 
-
 var mediaqueryList = window.matchMedia("(orientation: portrait)");
 mediaqueryList.addListener( function(EventoMediaQueryList) {
   if(EventoMediaQueryList.matches) {
@@ -12,17 +11,19 @@ mediaqueryList.addListener( function(EventoMediaQueryList) {
 });
 
 // Variables de etiquetas
-const navbar = `
+
+const navbar = /* html */ `
 	<nav class="navbar">
 		<ul>
-			<li>Home</li>
-			<li id="what">¿Como Jugar?</li>
-			<li>Sobre mí</li>
+			<li> Inicio </li>
+			<li id="what"> ¿Como Jugar? </li>
+			<li> Sobre mí </li>
 		</ul>
 	</nav>
  `;
 
-const game = `
+
+const game = /* html */ `
 <div class="contenedor">
 	<div class=lista>
 			<li data-id="item-2">Item 2</li>
@@ -39,9 +40,7 @@ const game = `
 </div>
 `;
 
-
-
- root.innerHTML += navbar + game;
+root.innerHTML += navbar + game;
 
 document.querySelector('#what').addEventListener('click', function() {
 	alert('Ordena los items según su número, de menor a mayor.')
